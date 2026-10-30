@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Time Watches</title>
+    <style>=
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7fb;
+            margin: 0;
+            padding: 25px;
+            color: #151d31;
+        }
+        header {
+            background: #151d31;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 20px;
+            border-top: 6px solid #a51e49;
+            box-shadow: 0 3px 12px #ddd;
+        }
+        button {
+            background: #151d31;
+            color: white;
+            padding: 13px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        input {
+            padding: 12px;
+            margin: 8px 0 15px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⌚ DIGI TIME</h1>
+    <p>Luxury Digital Watches • Your Time, Your Style</p>
+</header>
+
+<div class="card">
+    <h2>Module 01 – Frontend Development</h2>
+    <h3>Key Objectives</h3>
+    <p>1. Design a modern digital watch website.</p>
+    <p>2. Display watches and their prices.</p>
+    <p>3. Add watch customization options.</p>
+    <p>4. Create a responsive website.</p>
+    <button onclick="alert('Frontend completed!')">
+        ✓ Completed
+    </button>
+</div>
+
+<div class="card">
+    <h2>Module 02 – Backend Development</h2>
+    <h3>Key Objectives</h3>
+    <p>1. Manage user registration and login.</p>
+    <p>2. Create APIs for the application.</p>
+    <p>3. Manage watch products and orders.</p>
+    <p>4. Connect the frontend to a backend.</p>
+
+    <h3>Submit Your Details</h3>
+    <input id="username" placeholder="Enter your name">
+    <br>
+    <input id="email" type="email" placeholder="Enter your email">
+    <br>
+    <button onclick="submitDetails()">Submit Deliverables</button>
+    <p id="message"></p>
+</div>
+
+<div class="card">
+    <h2>Module 03 – Database Integration</h2>
+    <p>Manage watch products, customer details, and orders.</p>
+</div>
+
+<script>
+function submitDetails() {
+    const name = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+
+    if (name.trim() === "" || email.trim() === "") {
+        document.getElementById("message").textContent =
+            "Please enter your name and email.";
+    } else {
+        document.getElementById("message").textContent =
+            "Thank you, " + name + "! Your details have been entered.";
+    }
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Time Watches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>DIGI TIME</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#watches">Watches</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>TIME IS YOUR STYLE</h2>
+    <p>Discover Your Perfect Digital Watch</p>
+    <a href="#watches" class="btn">Explore Watches</a>
+</section>
+
+<section id="watches">
+    <h2>Our Digital Watches</h2>
+<div class="watch">
+    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+         alt="Classic Watch">
+    <h3>Classic Digital Watch</h3>
+    <p>Modern design with digital display.</p>
+    <p>Price: ₹1,499</p>
+</div>
+
+    <div class="watch">
+        <h3>Smart Digital Watch</h3>
+        <p>Stylish watch for everyday use.</p>
+        <p>Price: ₹2,499</p>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Digi Time</h2>
+    <p>Your destination for stylish digital watches.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: digitime@example.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Digi Time Watches</p>
+</footer>
+
+</body>
+<html>
